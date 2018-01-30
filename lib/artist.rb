@@ -29,6 +29,8 @@ end
 def self.find_or_create_by_name(name)
   if self.find(name) == nil
     self.create(name)
+  else
+    self.find(name)
   end
 end
 
