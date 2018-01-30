@@ -16,11 +16,12 @@ def self.new_by_filename(file)
 
   song = self.new(song_name)
   song.artist_name = artist
+
   song
 end
 
-def artist_name=(name)
-  self.artist = Artist.find_or_create_by_name(name)
+def artist_name=(artist)
+  self.artist = Artist.find_or_create_by_name(artist)
   self.artist.add_song(self)
 end
 
