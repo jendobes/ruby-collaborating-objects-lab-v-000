@@ -10,6 +10,7 @@ end
 
 def save
   @@all << self
+  self
 end
 
 attr_accessor :artist, :name
