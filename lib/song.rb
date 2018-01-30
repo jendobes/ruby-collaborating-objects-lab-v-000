@@ -17,6 +17,7 @@ def self.new_by_filename(file)
   song = self.new(song_name)
   song.name = song_name
   song.artist_name = artist
+  song.artist.add_song(self)
 end
 
 def artist_name=(name)
