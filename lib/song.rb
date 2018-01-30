@@ -29,7 +29,6 @@ def self.new_by_filename(file)
   song.name = song_name
   song.artist_name = artist
   song.save
-  song
 end
 
 def artist_name=(name)
